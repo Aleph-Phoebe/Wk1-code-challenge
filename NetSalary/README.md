@@ -1,0 +1,2 @@
+This program calculates an individuals Net Salary after all deductions have been made.
+Calculates the payee (Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary using the provided values for KRA, NHIF, and NSSF.
