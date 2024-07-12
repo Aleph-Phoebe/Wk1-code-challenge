@@ -1,4 +1,6 @@
-const readline = require ('readline');(
+const readline = require('readline'); // Readline for reading inputs
+
+const rl = readline.createInterface( // Reading input from the console
 {
   input: process.stdin,
   output: process.stdout
@@ -7,7 +9,7 @@ const readline = require ('readline');(
 // Give grade based on marks entered
 function gradeGenerator() {
   rl.question("Input your Marks:",(Marks) => {
-    if(Enter(Marks)) {
+    if(isNaN(Marks) || Marks === ' ' ) {
       console.log("Wrong Input!");
       // Give an error message
       return gradeGenerator()
@@ -24,6 +26,9 @@ function gradeGenerator() {
     } else {
       console.log("Your Grade is: E")
     }
+    rl.close() //Close the readline
+
   })
 }
 
+gradeGenerator() // Start the generating process

@@ -1,4 +1,6 @@
-const readline = readline.createInterface({
+const readline = require('readline');  // Readline for reading inputs
+
+const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
@@ -31,3 +33,4 @@ function speedDetector() {
   });
 }
 
+speedDetector();// Start the detecting process
